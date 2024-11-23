@@ -1,0 +1,127 @@
+
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Antsa" description="Discover more about Antsa, Full-Stack Developer">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About Me"
+				tagline="Hello! I'm Antsa, a passionate Full-Stack Developer. Here's a glimpse into my journey and what motivates me."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/ansta_portfolio.png"
+					alt="Antsa working on a project"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">My Journey</h2>
+				<div class="content">
+					<p>
+						I’m a Full-Stack Developer with a solid foundation in both front-end and back-end technologies. My passion for technology began with an interest in problem-solving and coding, which led me to dive deeper into programming. Over time, I’ve sharpened my skills using frameworks such as <a href="https://symfony.com/">Symfony</a> and <a href="https://laravel.com/">Laravel</a> for server-side development, as well as React for building interactive front-end applications.
+					</p>
+					<p>
+						Driven by both creative problem-solving and technical challenges, I strive to build applications that are functional, efficient, and user-friendly. From simple CRUD apps to complex e-commerce platforms and real-time systems, I’ve worked on projects that constantly push my abilities. The ever-evolving nature of technology excites me, and I’m always eager to learn and adopt new tools and frameworks.
+					</p>
+					<p>
+						Outside of coding, I’m committed to personal and professional growth. Whether it’s acquiring new languages, enhancing my skills, or seeking new challenges, I aim to evolve continuously. I value collaboration, teamwork, and the creation of meaningful solutions that make a difference for users.
+					</p>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>
+						I graduated with a Master's degree in 2023 from the <strong>École Nationale d'Informatique</strong> in Madagascar, specializing in IT. Throughout my academic journey, I combined formal education with self-learning, online courses, and hands-on projects. This blend of experiences has helped me build a well-rounded understanding of both theoretical concepts and practical applications in the tech industry.
+					</p>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>
+						My expertise lies in full-stack development, and I have experience with the following technologies:
+					</p>
+					<ul>
+						<li><strong>Back-end:</strong> PHP, Symfony, Laravel, Node.js, Express.js, <strong>MERN stack</strong> (MongoDB, Express, React, Node.js)</li>
+						<li><strong>Front-end:</strong> React, JavaScript, HTML5, CSS3, Bootstrap</li>
+						<li><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL</li>
+						<li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
+						<li><strong>Tools:</strong> Docker, Composer, NPM, Webpack</li>
+					</ul>
+					<p>
+						My passion for development drives me to stay on top of the latest trends and tools in the industry. Whether I’m tackling challenges on my own or working as part of a team, I’m motivated by the opportunity to create impactful solutions that scale and perform efficiently.
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
