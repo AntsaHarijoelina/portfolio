@@ -1,22 +1,68 @@
 ---
-title: Duvet Genius
-publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+title: Marvel Quiz Application
+publishDate: 2024-11-24 00:00:00
+img: /assets/Marvel.PNG
+img_alt: Iconic Marvel heroes and villains in a vibrant collage
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+  Test your knowledge of the Marvel Universe with our interactive quiz! Challenge yourself through three levels of increasing difficulty and track your progress.
 tags:
-  - Design
-  - Dev
-  - Branding
+  - React
+  - Firebase
+  - Quiz
+  - Marvel
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+## Overview
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+**Marvel Quiz** is an engaging application that allows users to test their knowledge of the Marvel Universe. Whether you're a casual fan or a die-hard Marvel enthusiast, this app is designed to challenge your understanding of Marvel heroes, villains, and stories through multiple levels of fun and dynamic quizzes.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+The application offers three levels of difficulty:
+- **Beginner:** 10 questions with multiple-choice answers to warm you up.
+- **Intermediate:** 10 questions that dive a bit deeper into the Marvel lore.
+- **Expert:** 10 challenging questions for the true Marvel masters.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Each question provides 4 options, and a correct answer increases your progress bar. Successfully completing all questions in a level unlocks the next stage.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+### Key Features
+
+- **Interactive Quiz:** Answer questions about Marvel characters, movies, and comics.
+- **Three Difficulty Levels:** Beginner, Intermediate, and Expert, each with 10 unique questions.
+- **Progress Tracking:** A visual progress bar that updates with each correct answer.
+- **Responsive Design:** Built with React for seamless user experience across devices.
+- **Backend Powered by Firebase:** Ensures secure and scalable data handling.
+
+---
+
+## Technologies Used
+
+The Marvel Quiz application is built using the following technologies:
+
+- **Front-End:**
+  - React: For creating an interactive and responsive user interface.
+- **Back-End:**
+  - Firebase: For managing user data, quiz questions, and progress tracking.
+- **Additional Tools:**
+  - CSS3: For styling and animations.
+  - ESLint/Prettier: For code quality and consistency.
+
+---
+
+## Project Details
+
+### Gameplay Flow
+
+1. Users start with the **Beginner Level**, answering 10 questions with 4 choices each.
+2. For every correct answer, the progress bar fills up, providing immediate feedback.
+3. Once all questions in the level are completed, users advance to the next level.
+4. The final goal is to complete the **Expert Level** and prove their mastery of Marvel knowledge.
+
+---
+
+### Challenges and Learning Outcomes
+
+This project allowed me to deepen my expertise in:
+- **React Components and State Management:** To create dynamic interactions and handle user input effectively.
+- **Firebase Integration:** For secure storage of questions, answers, and progress.
+- **Responsive Design:** Ensuring a smooth user experience on various devices.
+
+---
