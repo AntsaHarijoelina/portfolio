@@ -1,0 +1,128 @@
+
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Contact | Antsa" description="Get in touch with Antsa, Full-Stack Developer">
+	<div class="stack gap-20">
+		<main class="wrapper contact">
+			<Hero
+				title="Get in Touch"
+				tagline="Feel free to reach out! Whether you have a question, a project idea, or just want to say hi, I’d love to hear from you."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/sary tapaka_Background Removal.jpg"
+					alt="Antsa ready to communicate"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Contact Information</h2>
+				<div class="content">
+					<p>
+						I'm available for new projects, collaborations, or simply to answer any questions you might have. Here’s how you can get in touch with me:
+					</p>
+					<ul>
+						<li><strong>Email:</strong> <a href="mailto:antsa@example.com">antsaharijoelina@gmail.com</a></li>
+						<li><strong>Phone:</strong> +261 38 08 469 13</li>
+						<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/antsa-harijoelina-randriamanantsoa-a3031a26a/" target="_blank">www.linkedin.com/in/antsa-harijoelina-randriamanantsoa-a3031a26a</a></li>
+						<li><strong>GitHub:</strong> <a href="https://github.com/AntsaHarijoelina" target="_blank">https://github.com/AntsaHarijoelina</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Let’s Collaborate</h2>
+				<div class="content">
+					<p>
+						I’m always open to exciting new opportunities and projects. If you’re looking for a dedicated Full-Stack Developer with a passion for building efficient and user-friendly applications, feel free to contact me. Together, we can turn your ideas into reality!
+					</p>
+				</div>
+			</section>
+		</main>
+
+        <ContactCTA />	
+	</div>
+</BaseLayout>
+
+<style>
+	.contact {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	form.contact-form {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.contact-form input,
+	.contact-form textarea {
+		width: 100%;
+		padding: 0.75rem;
+		border: 1px solid var(--gray-400);
+		border-radius: 0.5rem;
+		font-size: var(--text-md);
+		color: var(--gray-900);
+	}
+
+	.contact-form button {
+		background-color: var(--primary);
+		color: white;
+		padding: 0.75rem 1.5rem;
+		border: none;
+		border-radius: 0.5rem;
+		cursor: pointer;
+		font-size: var(--text-lg);
+		transition: background-color 0.3s ease;
+	}
+
+	.contact-form button:hover {
+		background-color: var(--primary-dark);
+	}
+
+	@media (min-width: 50em) {
+		.contact {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.contact > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
